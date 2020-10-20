@@ -1,0 +1,19 @@
+int b[2];
+double a;
+begin
+a:=2.;
+b:=1;
+b[0]:=3+1-2;
+do
+begin
+	b[0]:=b[0]+1;
+	print(b[0]);
+end;
+until (b[0]>3);
+do
+begin
+	a:=a+.75+.5;
+	print(a);
+end;
+until (a>3.);
+end;

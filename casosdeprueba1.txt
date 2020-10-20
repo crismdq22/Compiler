@@ -1,0 +1,46 @@
+int a,b,f[4];
+double c,d;
+int a,f[4]; #variables redeclaradas
+int f; #no se puede usar una variable con el mismo nombre de una coleccion
+begin
+a:=3;
+c:=2.0;
+b:=4;
+a:=c+a; #error de tipos
+a:= a+b; #tipos compatibles
+z:= a; #variable no declarada (z)
+f[5]:=0; #indice fuera de rango
+if(a<=b)
+	begin
+		f:=a;
+		print({hola});
+	end;
+else
+	f:=b;
+end_if;
+a:= f.first() + f.last();
+do 
+	begin
+		f[2]:=0;
+		b:=a/f[2]; #error división por cero
+	end;
+until (a>b);
+print( {mensaje
+por pantalla} );
+if(a>c) #tipos no compatibles
+	print({chequeo de tipos});
+end_if;
+if(c<d) #d no tiene un valor asignado
+	d:=2;
+end_if;
+#probar rangos
+b := 200000000000000 - 400000000000000;
+b := 200000000000000 * 400000000000000;
+b := 200000000000000 / 400000000000000;
+b := 200000000000000 + 400000000000000;
+end;
+
+
+
+
+	

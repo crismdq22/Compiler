@@ -1,0 +1,20 @@
+int b[3],c;
+double a[5],d;
+begin
+	a:=1.;
+	b:=2;
+	c:=b.length();
+	print(c);
+	c:=a.length();
+	print(c);
+	b[0]:=9;
+	c:=b.first();
+	print(c);
+	c:=b.last();
+	print(c);
+	d:=a.first();
+	print(d);
+	a[4]:=2.33;
+	d:=a.last();
+	print(d);
+end;
